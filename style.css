@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "wraper-global" 
+    "footer"
+    ;
+    gap: 4.4rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+button, a {
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+  
+button:hover, a:hover {
+    filter: brightness(0.9);
+}
+
+.wraper-global {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-areas: 
+    "main sidebar"
+    ;
+    padding: 0 10rem;
+    gap: 3.4rem;
+    align-items: start;
+}
+ header {
+    grid-area: header;
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 101.2rem;
+
+    background: var(--brand-colors-explorer-dark, #065E7C);
+}
+
+header .wraper-header {
+    width: 100%;
+    padding: 0 11.2rem;
+    gap: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .wraper-header .pata-de-gato {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4FCFF;
+    padding: .8rem;
+}
+
+header .wraper-header .wraper-input {
+    display: flex;
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    align-items: center;
+    gap: 1.2rem;
+
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+header .wraper-header .wraper-input input {
+    background-color: transparent;
+    border: 0;
+    border-color: transparent;
+    width: 100%;
+
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+header .wraper-header .wraper-input input:focus {
+    outline: none;
+}
+
+header .wraper-header .wraper-input input::placeholder {
+    color: #FFF; 
+}
+
+header .wraper-header .image {
+    border-radius: 50%;
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .wraper-header .image img {
+    border-radius: 50%;
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+.wraper-global main {
+    grid-area: main;
+    width: 80rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.wraper-global main .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.wraper-global main .text .wraper-h1-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 36.6rem;
+    width: 100%;
+}
+
+.wraper-global main .text .wraper-h1-buttons .wraper-h1 h1 {
+    font-family: Mulish;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%
+}
+
+.wraper-global main .text .wraper-h1-buttons .wraper-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.wraper-global main .text .wraper-h1-buttons .wraper-buttons button {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-colors-explorer-dark, #065E7C);
+    border: none;
+    padding: 1.2rem;
+}
+
+.wraper-global main .text .wraper-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.wraper-global main .text .wraper-p p {
+    color: var(--platform-aliases-background, #121214);
+    font-family: Mulish;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.wraper-global .sidebar {
+    grid-area: sidebar;
+    width: 38.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wraper-global .sidebar .wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 38.2rem;
+}
+
+.wraper-global .sidebar .wraper .wraper-2-h1 h1 {
+    font-family: Mulish;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.wraper-global .sidebar .wraper .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.wraper-global .sidebar .wraper .card .card-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wraper-global .sidebar .wraper .card .card-text h1 {
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.wraper-global .sidebar .wraper .card .card-text p {
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #387E96;
+}
+
+footer .wraper-footer  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .wraper-footer h1 {
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+
+@media (max-width: 70rem) {
+    .wraper-global {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 55rem) {
+    .wraper-global {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wraper-global main {
+        width: 55rem;
+    }
+
+    .wraper-global main .image-gato img{
+        width: 60rem;
+        height: 37rem;
+    }
+
+    .wraper-global main .text .wraper-h1-buttons {
+       flex-direction: column;
+       gap: .8rem;
+       align-items: flex-start;
+    }
+}
+
+@media (max-width: 40rem) {
+    .wraper-global {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wraper-global main {
+        width: 38.2rem;
+    }
+
+    .wraper-global main .image-gato img{
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .wraper-global main .text .wraper-h1-buttons {
+       flex-direction: column;
+       gap: .8rem;
+       align-items: flex-start;
+    }
+}
